@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    * {margin: 0 }; 
+p { margin-left:10px; }
+</style>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+  <p>Hello</p>
+  <p>2nd Paragraph</p> <!--p 태그는 고유한 마진값을 가진다. -->
+
+<script>
+  var p = $('p:last');
+  var offset = p.offset(); // 화면 상단의 꼭지점에서 떨어진 거리
+  // 마지막 p태그는 화면상단 꼭지점으로부터 얼만큼 떨어져 있는가? 
+  p.html( 'left: ' + offset.left + ', top: ' + offset.top );
+</script>
+
+</body>
+</html>
+
