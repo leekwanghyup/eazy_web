@@ -55,8 +55,12 @@ button {
     top: 0;
     left: -350px;
     position: fixed;
+    transition: 0.4s; /* 바뀌는 과정을 0.4s동안 보여줌 ㄴ */
 }
 
+.page-main > aside.open {
+    left: -70px;
+}
 .page-main > aside ul {
     margin: 0;
     padding: 0;

@@ -17,10 +17,8 @@ $(function(){
         console.log("button click"); 
          $aside.toggleClass('open'); 
         if($aside.hasClass('open')){
-            $aside.stop().animate({left:'-70px'}, $duration,'easeOutBack'); // 서랍 열림 easeOutBack: Jquery UI, 덜컹거리는 느낌 
             $button.find('img').attr('src', 'img/btn_close.png'); // close버튼으로 이미지 변경 
         } else{
-            $aside.stop().animate({left:'-350px'}, $duration,'easeInBack');            
             $button.find('img').attr('src', 'img/btn_open.png') 
         }
     })
