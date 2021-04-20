@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page-main{
+            position: relative;
+        }
+
+        .page-main > aside{
+            background-color: red;
+            width: 350px;
+            height: 100%;
+            top:0; 
+            left: -350px; 
+            position: fixed;
+        }
+
+        .page-main > aside ul {
+            margin: 0;
+            padding: 0;
+            top: 50px;
+            left: 114px;
+            position: absolute;
+        }
+
+        .page-main > aside li {
+            margin: 0 0 20px;
+            list-style: none;
+        }
+
+        .page-main > aside button {
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            top: 150px;
+            left: 350px;
+            width: 52px;
+            height: 132px;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="page-main" role="main">
+        <aside>
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+            </ul>
+            <button>버튼</button>
+        </aside>
+    </div>
+
+
+</body>
+</html>
